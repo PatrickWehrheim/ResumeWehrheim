@@ -1,0 +1,25 @@
+﻿<Page x:Class="ResumeWehrheim.Pages.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ResumeWehrheim.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Home">
+
+    <Grid Background="#222">
+        <Image x:Name="ProfileImage" Source="/Ressources/Profile.jpg" Width="100" Height="120" Margin="12,0,688,322"></Image>
+
+        <Image x:Name="LinkedInQR" Source="/Ressources/LinkedInQR.png" Width="100" Height="100" Margin="688,12,12,322"></Image>
+
+        <TextBlock x:Name="JobName"  Width="330" Height="50" Margin="148,19,152,335" FontSize="32" TextAlignment="Center" Foreground="White">GameAIProgrammer.cv</TextBlock>
+        <TextBlock x:Name="Name"  Width="100" Height="16" Margin="12,117,688,301" TextAlignment="Center" Foreground="White">Patrick Wehhreim</TextBlock>
+        <TextBlock x:Name="Address"  Width="100" Height="16" Margin="12,133,688,280" FontSize="10" TextAlignment="Center" Foreground="White">Hedwig-Dohm-Str. 3, 29664 Walsrode</TextBlock>
+        <TextBlock x:Name="Land"  Width="100" Height="16" Margin="12,152,688,261" FontSize="10" TextAlignment="Center" Foreground="White">Germany</TextBlock>
+        <TextBlock x:Name="LinkedInText" Width="100" Height="16" Margin="688,117,12,301" TextAlignment="Center" Foreground="White">MyLinkedIn Profile</TextBlock>
+        <TextBlock x:Name="AboutMe"  Width="550" Height="110" Margin="125,217,125,97" TextWrapping="Wrap" Foreground="White" Background="#333">About Me:</TextBlock>
+        <Button Width="100" Height="20" Margin="150,363,550,51" Click="OnSchoolClick">Schools</Button>
+        <Button Width="100" Height="20" Margin="550,363,150,51" Click="OnCompanieClick">Companies</Button>
+    </Grid>
+</Page>

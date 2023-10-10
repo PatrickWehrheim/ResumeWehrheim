@@ -7,4 +7,22 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Documents\ResumeWehrheim.pdf" />
+    <None Remove="Ressources\LinkedInQR.png" />
+    <None Remove="Ressources\Profile.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Documents\ResumeWehrheim.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\LinkedInQR.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\Profile.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
